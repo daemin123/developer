@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <table border="1" width = "400px" height="300px" aligh="center"> 
+                            너비            높이            글자배열-->
+    <table border="1" width = "400px" height="300px" aligh="center">
+        <caption>테이블 제목</caption>
+        <tr>
+            <th>열이름1</th>
+            <th>열이름2</th>
+            <th>열이름3</th>
+        </tr>
+        <tr>
+            <td>Value1</td>
+            <td>Value2</td>
+            <td>Value3</td>
+        </tr>
+        <tr>
+            <td>Value1</td>
+            <td>Value2</td>
+            <td>Value3</td>       
+        </tr>
+
+    </table>
+    <hr>
+    <!-- rowspan - 셀병합 - 아래와 병합 -->
+    <!-- colspan - 셀병합 - 가로 병합   -->
+    <style>.tb1_rowspan td {
+            width: 35px; height: 35px; border: 1px solid;
+            text-align: center;
+    }
+            </style>
+
+    <!-- table>tr*5>td*5{$,$@6,$@11,$@16,$@21} -->
+     <!-- table>tr*5>td*5{$}  -->
+    <table class="tb1_rowspan">
+    
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            <!-- <td>3</td> -->
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td rowspan="3">13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <!-- <td>18</td> -->
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <!-- <td>23</td> -->
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <!-- table.tb1_rowspan>tr*5>td*5 -->
+
+
+</body>
+</html>

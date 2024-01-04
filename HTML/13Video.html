@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-video{
+            position: absolute; /* absolute = 위치 고정 */
+            top: 0;             /* top : 0 => 가장 상단에 위치*/
+            left: 0;            /* left:0 => 가장 왼쪽에 위치*/
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;   /*입체감*/
+            opacity: 0.35; /*투명도*/
+        }
+        .bg-video-contents {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 화면 꽉 채우기 */
+        }
+        body::--webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>awef</div>
+    <div>awef</div>
+    <div>awef</div>
+    <div>awef</div>
+    <div>awef</div>
+    <!-- controls 시간바  autoplay 자동재생  loop 무한재생  muted  음소거 -->
+    <div class ="bg-video">
+
+        <video autoplay loop muted class="bg-video-contents">
+            <source src ="./video/winter.mp4" type="video/mp4">
+        </video>
+        
+    </div>
+</body>
+</html>
