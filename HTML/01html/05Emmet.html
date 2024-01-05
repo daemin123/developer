@@ -147,5 +147,39 @@
         <ul id="menu01"></ul>
     </div>
 
+    <!-- attr 속성 추가 -->
+    <!-- div>ol[type ='I',data-menu='menu01']>li*4{TEXT$} -->
+    <div>
+        <ol type="I" ,data-menu="menu01">
+            <li>TEXT1</li>
+            <li>TEXT2</li>
+            <li>TEXT3</li>
+            <li>TEXT4</li>
+        </ol>
+    </div>
+
+    <!-- .wrapper>ul>li*4{TEXT$} -->
+    <div class="wrapper">
+        <ul>
+            <li>TEXT1</li>
+            <li>TEXT2</li>
+            <li>TEXT3</li>
+            <li>TEXT4</li>
+        </ul>
+    </div>
+    <!-- .wrapper>ul>li*4{TEXT$@8}  숫자 8부터 순차적 나열 (@8) -->
+    <div class="wrapper">
+        <ul>
+            <li>TEXT8</li>
+            <li>TEXT9</li>
+            <li>TEXT10</li>
+            <li>TEXT11</li>
+        </ul>
+    </div>
+
+    
+
+
+
 </body>
 </html>

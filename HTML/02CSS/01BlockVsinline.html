@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,span{
+            border: 1px solid;
+        }
+        div{
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            padding: 15px;
+        }
+        span{
+            display: inline;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            padding: 15px;
+            /* border: 5px dashed; */
+            /* 인라인형 태그는 컨텐츠의 크기에 맞게 설정
+               margin은 간격 가능하긴 하지만 제한이 있음
+               padding은 가능하지만 라인에 영향을 줌 */
+        }
+    </style>
+    <!-- 
+         블럭형태그(ex.div) : 하나의 라인전체를 사용하는 태그   
+                             width, height, border, margin, padding 적용
+         인라인형태그(ex.span) : 한 라인안에 포함되어 있는 태그
+                             width : x
+                             height : x
+                             border : o
+                             margin : left, right
+                             padding : o
+     -->
+
+
+</head>
+<body>
+    
+    <div>HELLOWORLD</div>
+    <div>HELLOWORLD</div>
+
+    <hr>
+    <span>HELLOWORLD</span>
+    <span>HELLOWORLD</span>
+</body>
+</html>
