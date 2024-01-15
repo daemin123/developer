@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type='checkbox'] {
+            display: none;
+        }
+        input[type='checkbox']+label {
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 1px solid ;
+            margin-right: 10px;
+        }
+        /* input type 체크박스가 체크가 된다면 같은 레벨에 있는 라벨중 바로 밑에 있는 라벨에다가 색을 주겠다. */
+        input[type='checkbox']:checked+label{
+            background-color: lightgray;
+            background-image: url('./images/check.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .chk_block {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="chk_block">
+        <input type="checkbox" id="chk"/>
+        <label for="chk"></label>
+        <span>체크박스</span>
+    </div>
+
+</body>
+</html>
